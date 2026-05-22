@@ -369,10 +369,94 @@ Add only after the first version is live:
 - Analytics
 - Automated publication sync from Google Scholar or a maintained BibTeX file
 
-## 13. Open Decisions Before Implementation
+## 13. Questions to Answer Before Implementation
 
-- Confirm GitHub username and final repository name.
-- Confirm whether the website should publish the phone number.
-- Confirm whether `mypic.jpeg` should be used as-is, cropped into a portrait, or replaced with a separate headshot.
-- Confirm whether the initial site should be single-page only or include separate pages.
-- Confirm whether Thai content is needed in version 1.
+Answer these before building the first version of the site.
+
+1. What should be the public GitHub Pages URL?
+   - Recommended default: use the existing repository `skitimo/website` first, then decide later whether to move to `skitimo.github.io`.
+   - Answer: Use the existing `skitimo/website` repository for version 1. Expected GitHub Pages URL: `https://skitimo.github.io/website/`.
+
+2. Should the first version be deployed from `skitimo/website`, even though the URL will likely be `https://skitimo.github.io/website/`?
+   - Recommended default: yes, because the repository already exists.
+   - Answer: Yes.
+
+3. Should the website publish the CV PDF?
+   - Recommended default: publish a web-safe CV only after removing private details such as phone number if needed.
+   - Answer: Yes, publish the CV PDF.
+
+4. Should the phone number from the CV appear on the public website?
+   - Recommended default: no, use email and public profile links only.
+   - Answer: Not explicitly answered. Use the default for the webpage: do not show the phone number in page content. Note that the published CV PDF may still contain it unless a redacted CV is provided.
+
+5. Which email address should be public?
+   - Current candidate from CV: `sippanon.kitimoon@gmail.com`.
+   - Answer: Use `sippanon.kitimoon@gmail.com` unless replaced later.
+
+6. Should `mypic.jpeg` be used as the main hero image?
+   - Recommended default: crop it into a clean portrait/headshot for the website and keep the full poster out of the hero.
+   - Answer: Yes, use a cropped version of the provided welcome image as the hero portrait.
+
+7. Do you have a separate preferred headshot or profile photo?
+   - Recommended default: use a cropped version of `mypic.jpeg` if no other photo is available.
+   - Answer: No separate headshot provided. Use the cropped welcome image.
+
+8. Should the first site be a single-page website or multiple pages?
+   - Recommended default: single-page version 1 with section anchors.
+   - Answer: Single-page website for version 1.
+
+9. Should the first version include Thai content?
+   - Recommended default: English-only version 1, with optional Thai introduction later.
+   - Answer: English-only for version 1.
+
+10. What title should appear in the hero?
+    - Candidate: `Computational Applied Mathematician`
+    - Candidate: `Data & Signal Processing Engineer`
+    - Candidate: `Lecturer, Data Science Research Center, Faculty of Science, Chiang Mai University`
+    - Answer: Not explicitly answered. Use `Computational Applied Mathematician` as the primary title and `Data & Signal Processing Engineer` as the secondary descriptor.
+
+11. What affiliation wording should be used?
+    - Candidate: `Data Science Research Center, Faculty of Science, Chiang Mai University`
+    - Answer: Use `Data Science Research Center, Faculty of Science, Chiang Mai University`.
+
+12. Should the start date from the welcome poster appear on the site?
+    - Current source says: starting April 1, 2026.
+    - Recommended default: include it only in the About section, not the hero.
+    - Answer: Not explicitly answered. Use the default: include the April 1, 2026 start date only in the About section.
+
+13. Which public profile links should be included?
+    - Current candidate: Google Scholar `https://scholar.google.com/citations?user=DyFbVikAAAAJ`
+    - Need confirmation: GitHub, LinkedIn, CMU profile, ORCID, ResearchGate, personal email.
+    - Answer: Include Google Scholar and email for version 1. Add GitHub/LinkedIn/CMU/ORCID/ResearchGate only after URLs are confirmed.
+
+14. Should publications be manually listed in version 1 or only linked through Google Scholar?
+    - Recommended default: link to Google Scholar in version 1.
+    - Answer: Not explicitly answered. Use the default: link to Google Scholar in version 1.
+
+15. Are there selected research projects or publications that must be highlighted on the homepage?
+    - Recommended default: no selected highlights until confirmed.
+    - Answer: Not explicitly answered. Use the default: no selected publication/project highlights in version 1.
+
+16. Should consulting or industry collaboration be presented explicitly?
+    - Recommended default: mention industry analytics experience, but avoid making the site feel like a consulting landing page.
+    - Answer: Not explicitly answered. Use the default: mention industry analytics experience without making the site feel like a consulting landing page.
+
+17. Should the design use CMU/DSRC branding colors and logos?
+    - Recommended default: use color inspiration only unless logo usage is clearly permitted.
+    - Answer: Not explicitly answered. Use the default: take color inspiration from CMU/DSRC, but do not use official logos as standalone assets unless provided.
+
+18. Should the logos visible in the welcome image be reused separately on the website?
+    - Recommended default: no, unless official logo assets and usage permission are available.
+    - Answer: Not explicitly answered. Use the default: do not reuse logos separately.
+
+19. Should the site include a downloadable vCard/contact card?
+    - Recommended default: no for version 1.
+    - Answer: Not explicitly answered. Use the default: no vCard for version 1.
+
+20. Should the site include analytics?
+    - Recommended default: no for version 1.
+    - Answer: Not explicitly answered. Use the default: no analytics for version 1.
+
+21. Should I commit and push implementation changes automatically after review, or stop after local implementation?
+    - Recommended default: commit locally and ask before pushing.
+    - Answer: Yes, commit implementation changes locally and ask before pushing.
