@@ -31,6 +31,6 @@ In GitHub, configure Pages to deploy from the `main` branch and `/ (root)` folde
 - `index.html`: single-page site
 - `assets/css/styles.css`: site styles
 - `assets/images/welcome-poster.jpeg`: original welcome poster source
-- `assets/images/sippanon-portrait.jpeg`: cropped portrait used on the homepage
+- `assets/images/sippanon-headshot.jpeg`: headshot used on the homepage
 - `files/kitimoon_cv.pdf`: published CV PDF
 - `plan.md`: implementation plan and decisions
